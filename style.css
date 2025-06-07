@@ -93,3 +93,78 @@ a {
     display: none;
   }
 }
+
+/* Header */
+#header {
+  position: fixed;
+  right: -300px;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #1e1b48;
+  transition: 0.3s;
+  z-index: 5;
+}
+#header.on {
+  right: 0;
+}
+
+main {
+  position: relative;
+  right: 0;
+  top: 0;
+  width: 100%;
+  transition: 0.3s;
+}
+main.on {
+  right: 300px;
+}
+
+#header a {
+  color: #fff;
+  text-transform: capitalize;
+}
+.logo {
+  display: block;
+  position: fixed;
+  top: 20px;
+  left: 100px;
+  z-index: 10;
+}
+.logo > a {
+  display: block;
+  font: bold 32px/40px 'Indie Flower';
+  color: #444;
+}
+
+#header .gnb_wrap {
+  width: 300px;
+  height: 100%;
+  text-align: center;
+  padding: 100px 20px 20px;
+}
+
+#gnb > li {
+  float: left;
+  width: 100%;
+  border: 1px dotted #fff;
+}
+#gnb > li > a {
+  display: block;
+  width: 100%;
+  font: 18px/80px '맑은 고딕';
+}
+
+.toggle {
+  display: block;
+  position: fixed;
+  right: 40px;
+  top: 20px;
+  z-index: 10;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font: 28px 'inherit';
+  color: #444;
+}
