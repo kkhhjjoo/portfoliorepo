@@ -439,3 +439,106 @@ main.on {
     opacity: 0;
     transition: 0.5s;
 }
+#portfolio .tab>li.on>.pannel >.pic {
+    transform: translateX(0px);
+    opacity: 1;
+}
+#portfolio .tab> li> .pannel> .info{
+    padding: 80px;
+}
+#portfolio .tab>li.on> .pannel>.info>.sub_title{
+    transform: translateX(0px);
+    opacity: 1;
+}
+#portfolio .tab>li.on> .pannel>.info>.sub_txt1{
+    transform: translateX(0px);
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+#portfolio .tab>li.on> .pannel>.info>.sub_txt2{
+    transform: translateX(0px);
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+#portfolio .tab>li.on> .pannel>.info>.sub_txt3{
+    transform: translateX(0px);
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+#portfolio .tab>li.on> .pannel>.info>.view_more{
+    transform: translateX(0px);
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+
+@media screen and (max-width:980px){
+    #portfolio .tab>li> .pannel> .info {
+        width: 100px;
+        padding: 30px;
+        padding-bottom:30px;
+    }
+    #portfolio .tab>li> .pannel> .info>.sub_title{
+        font-size: 28px;
+    }
+    #portfolio .tab>li> .pannel> .info>.sub_txt1{
+        font-size: 20px;
+    }
+    #portfolio .tab>li> .pannel> .info>.sub_txt2{
+        font-size: 18px;
+    }
+    #portfolio .tab>li> .pannel> .info>.sub_txt3{
+        margin: 0 0 20px;
+    }
+}
+
+@media screen and (max-width:768px){
+    #portfolio{
+        height: 1200px;
+    }
+
+    #portfolio .tab>li> .pannel> .pic img{
+        width: 150px;
+    }
+    #portfolio .tab>li>.pannel >.info{
+        margin-top: 100px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:640px){
+
+    #portfolio .tab > li >a{
+        padding: 0 10px;
+        font-size: 14px;
+    }
+    #portfolio .tab{
+        height: 600px;
+    }
+    #portfolio .tab>li> .pannel>.pic{
+        position: static;
+        height: auto; /* 높이 자기 크기만큼만 잡히게 */
+    }
+    #portfolio .tab>li .pannel> .pic img {
+        width: 100%;
+        position: static;
+        transform: translate(0px);
+    }
+    #portfolio .tab>li> .pannel>div{
+        width: 100%;
+    }
+    #portfolio .tab>li> .pannel>.info{
+        margin: 40px 0 0;
+        text-align: center;
+    }
+    #portfolio .tab>li> .pannel>.info>.sub_title{
+        font-size: 24px
+    }
+    #portfolio .tab>li> .pannel>.info>.sub_txt1{
+        font-size: 18px;
+    }
+    #portfolio .tab>li> .pannel>.info>.sub_txt2{
+        font-size: 14px;
+        margin: 0 0 20px;
+    }
+
+}
