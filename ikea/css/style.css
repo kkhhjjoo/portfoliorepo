@@ -89,3 +89,56 @@ a {
   width: 550px;
   margin-top: -20px;
 }
+
+#gnb > li {
+  float: left;
+  padding: 0 20px;
+}
+#gnb > li > a {
+  display: block;
+  font: bold 18px/60px '맑은 고딕';
+}
+
+#gnb > li > .sub_wrap {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  background: #333;
+  text-align: center;
+}
+#gnb > li > .sub_wrap a {
+  color: #fff;
+}
+#gnb > li > .sub_wrap > .sub_inner {
+  width: 1176px;
+  margin: 0 auto;
+}
+
+#gnb .depth_1 {
+  padding: 30px 0;
+}
+#gnb .depth_1::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+#gnb .depth_1 > li {
+  float: left;
+  width: 25%;
+  padding: 20px 0px;
+}
+#gnb .depth_1 > li > a {
+  display: block;
+  font: bold 18px/40px 'inherit';
+}
+
+#gnb .depth_2 > li > a {
+  display: block;
+  font: 16px/35px 'inherit';
+}
+
+#header .toggle {
+  display: none;
+}
