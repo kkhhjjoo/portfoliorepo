@@ -216,3 +216,57 @@ main.on {
     display: block;
   }
 }
+
+/* About */
+#about {
+  background-color: lightcoral;
+  height: 900px;
+}
+#about .title {
+  font: 50px 'Indie Flower';
+}
+#about .pic {
+  float: left;
+  width: 40%;
+  transform: translateX(-150px);
+  transition: 0.3s 0.1s;
+  opacity: 0;
+}
+#about.on .pic {
+  transform: translate(0px);
+  opacity: 1;
+}
+#about .pic img {
+  display: block;
+  width: 70%;
+}
+
+#about .msg {
+  float: left;
+  width: 60%;
+  transform: translate(100px);
+  transition: 0.3s 0.2s;
+  opacity: 0;
+}
+#about.on .msg {
+  transform: translate(0px);
+  opacity: 1;
+}
+
+#about .msg .introduce {
+  float: left;
+}
+#about .msg .introduce > li {
+  width: 100%;
+}
+#about .msg .introduce > li > a {
+  display: block;
+  margin: 20px 0;
+  font: bold 28px 'inherit';
+  color: #444;
+}
+#about .msg .introduce > li > .sub > li > a {
+  display: block;
+  font: 20px 'inherit';
+  color: #444;
+}
