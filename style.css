@@ -168,3 +168,51 @@ main.on {
   font: 28px 'inherit';
   color: #444;
 }
+
+/* Home */
+
+#home {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+#home video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+#home .msg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 1180px;
+  text-align: left;
+  font: bold 60px 'Hi Melody';
+  color: #fff;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+#home .msg .introduce br {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  #home .inner {
+    width: 100%;
+  }
+
+  #home .msg {
+    width: 100%;
+    text-align: center;
+  }
+  #home .msg .introduce br {
+    display: block;
+  }
+}
