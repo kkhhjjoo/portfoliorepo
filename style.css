@@ -270,3 +270,69 @@ main.on {
   font: 20px 'inherit';
   color: #444;
 }
+
+/* Skill */
+#skill {
+  height: 700px;
+  margin: 0 auto;
+  background-color: #efc4ef;
+  color: #444;
+}
+#skill .title {
+  font: 50px 'Indie Flower';
+}
+#skill .box {
+  float: left;
+  width: 20%;
+  padding: 30px;
+}
+
+#skill .box .progress {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+}
+#skill .box .progress .msg span {
+  font-weight: bold;
+  font-size: 20px;
+}
+#skill .box .info {
+  margin: 20px 0 0;
+  height: 3em;
+  font: 14px/1em 'inherit';
+  text-align: justify;
+}
+
+#skill .txt{
+    width:500px;
+    height: 200px;
+    font:bold 18px 'inherit;
+}
+
+@media screen and (max-width:1200px){
+    #skill{
+        height: auto
+    }
+    #skill .box{
+        width: 31.333%;
+        margin-bottom: 20px;
+    }
+    #skill .box .msg{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:980px){
+    #skill .box{
+        width:48.5%
+    }
+}
+
+@media screen and (max-width:640px){
+    #skill .box{
+        width:100%
+    }
+    #skill .box .info{
+        text-align: center
+    }
+}
