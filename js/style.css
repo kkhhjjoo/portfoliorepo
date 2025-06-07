@@ -1,0 +1,225 @@
+*{padding:0; margin: 0; box-sizing:border-box;}
+ol, ul, li{list-style:none;}
+a{text-decoration: none;}
+
+
+/*공통*/
+.content{width:100%; padding:150px 0}
+.content .inner{width:1176px; margin: 0 auto;}
+.content .inner::after{content:''; clear: both; display: block}
+.content .title::after{content:''; display: block; width: 50px; height: 4px; background-color: #ddd; margin:10px 0; color: #444}
+
+@media screen and (max-width:1200px){
+    .content{padding:150px 40px}
+    .content .inner{width:100%}
+}
+@media screen and (max-width:980px){
+    .content{padding:120px 40px}
+}
+@media screen and (max-width:768px){
+    .content{padding:100px 40px}
+}
+@media screen and (max-width:640px){
+    .content{padding:80px 20px}
+}
+
+/* 페이지 이동 버튼 */
+.page_btn{position: fixed; right: 50px; top: 50%; transform: translateY(-50%); z-index: 5;}
+.page_btn>a{position: relative; display: block; margin: 14px;  color: #444; text-align: right; text-transform: capitalize;}
+.page_btn>a:hover{font-weight:bold}
+.page_btn>a::after{content: ''; display: block; 
+    position: absolute; right: -25px; top: 7px;
+    width: 12px; height: 12px; border-radius: 50%; background-color: mediumpurple;}
+
+    @media screen and (max-width:980px){
+        .page_btn{display:none}
+    }
+
+
+
+
+/*header*/
+#header{position:fixed; right: -300px; top: 0; width:300px; height: 100%; background:#1e1b48; transition: 0.3s; z-index:5}
+#header.on{right: 0;}
+
+main{position: relative; right: 0; top: 0; width: 100%; transition: 0.3s}
+main.on{right: 300px;}
+
+#header a{color:#fff; text-transform: capitalize}
+
+.logo{display:block; position:fixed; top:20px; left:100px; z-index: 10}
+.logo >a{display:block; font:bold 32px/40px 'Indie Flower'; color:#444}
+
+#header .gnb_wrap{width:300px; height: 100%; text-align:center; padding: 100px 20px 20px;}
+
+
+#gnb{}
+#gnb>li{float:left; width:100%; border:1px dotted #fff}
+#gnb>li>a{display:block; width:100%; font:18px/80px '맑은 고딕'}
+
+.toggle{display:block; position:fixed; right:40px; top:20px; z-index:10; background-color: transparent; border:0; outline:0; cursor:pointer; font:28px 'inherit'; color:#444}
+
+
+/*home*/
+
+#home{position: relative; width: 100%; height: 800px; overflow: hidden}
+#home video{position : absolute ; top : 50%; left : 50%; transform: translate(-50%,-50%); z-index : -1; min-width : 100%; min-height : 100%; width : auto; height : auto; 
+/*    animation: filter_gray 7s infinite;*/
+}
+#home .msg{
+    position: absolute;left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 1; 
+    width: 1180px; text-align: left;
+    font: bold 60px 'Hi Melody'; color: #fff; text-shadow: 0 0 20px rgba(0,0,0,0.2)
+}
+#home .msg .introduce br{display:none}
+
+@media screen and (max-width:1200px){
+    #home .inner{width:100%}
+    #home .msg{width:100%; text-align: center;}
+    #home .msg .introduce br{display:block;}
+}
+
+
+
+
+
+
+
+/*about*/
+#about{background-color: lightcoral; height: 900px}
+#about .title{font: 50px 'Indie Flower'}
+#about .pic{float:left; width:40%; transform:translateX(-150px); transition:0.3s 0.1s; opacity: 0}
+#about.on .pic{transform:translateX(0px); opacity: 1}
+#about .pic img{display:block; width:70%;}
+
+#about .msg{float:left; width:60%; transform:translateX(100px); transition:0.3s 0.2s;opacity:0}
+#about.on .msg{transform:translateX(0px); opacity: 1}
+
+#about .msg .introduce{float:left}
+#about .msg .introduce>li{width:100%}
+#about .msg .introduce>li>a{display:block;margin: 20px 0; font:bold 28px 'inherit';color:#444}
+
+#about .msg .introduce>li>.sub>li>a{display:block; font:20px 'inherit'; color:#444}
+
+
+/*skill*/
+#skill{height:700px; margin: 0 auto; background-color:#efc4ef; color:#444}
+#skill .title{font: 50px 'Indie Flower'}
+#skill .box{float:left; width:20%; padding: 30px;}
+
+#skill .box .progress {position:relative; width:180px; height: 180px; margin: 0 auto;}
+#skill .box .progress .msg{position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); font-size:28px;}
+#skill .box .progress .msg span{font-weight:bold; font-size:20px}
+#skill .box .info{margin: 20px 0 0; height: 3em; font: 14px/1em 'inherit'; text-align: justify}
+
+#skill .txt{width:500px; height:200px; font:bold 18px 'inherit'}
+
+@media screen and (max-width:1200px){
+    #skill{height: auto}
+    #skill .box{width:31.333% ; margin-bottom: 20px}
+    #skill .box .msg{margin: 0 auto}
+  
+}
+@media screen and (max-width:980px){
+    #skill .box{width:48.5%}
+}
+
+@media screen and (max-width:640px){
+    #skill .box{width:100%}
+    #skill .box .info{text-align: center}
+}
+
+
+/*portfolio*/
+
+#portfolio{background: rgb(245,238, 232)}
+#portfolio .title{font: 50px 'Indie Flower';}
+#portfolio .tab{position: relative; width: 100%; height: 600px; text-align: center;}
+#portfolio .tab>li{ display: inline-block;}
+#portfolio .tab>li>a{display: block; padding: 0 30px; font: 16px/50px 'inherit'; color: #444; }
+#portfolio .tab>li>a:hover{font-weight: bold}
+
+#portfolio .tab>li>.pannel{position: absolute; left: 0; top: 100px; width: 100%; height: 300px; }
+
+
+
+#portfolio .tab>li>.pannel >div{float: left; width: 50%; }
+#portfolio .tab>li>.pannel >.pic{position: relative; width:50%; height: 100%; transform: translateX(-100px); opacity: 0; transition: 0.5s}
+#portfolio .tab>li>.pannel >.pic img{width: 100%; position: absolute; left: 50%; top: 0; transform: translateX(-50%);}
+
+#portfolio .tab>li>.pannel >.info{width:50%; padding:0; text-align: justify;}
+#portfolio .tab>li>.pannel >.info>.sub_title{margin: 0 0 20px; font: bold 32px 'inherit';color: #444; 
+    transform: translateX(100px);opacity:0; transition:0.5s}
+#portfolio .tab>li>.pannel >.info>.sub_txt1{margin: 0 0 20px;font: 24px 'inherit';color:green; 
+    transform: translateX(100px);opacity:0; transition:0.5s}
+#portfolio .tab>li>.pannel >.info>.sub_txt2{margin: 0 0 30px;font: 16px 'inherit';color:#777; 
+    transform: translateX(100px);opacity:0; transition:0.5s}
+#portfolio .tab>li>.pannel >.info>.sub_txt3{margin: 0 0 40px; font-size:16px; font: 16px 'inherit';color:#777; 
+    transform: translateX(100px);opacity:0; transition:0.5s}
+#portfolio .tab>li>.pannel >.info>.view_more{display: inline-block; width:160px; font: 14px/40px 'inherit'; border: 1px solid firebrick; text-align: center; color: firebrick; 
+    transform: translateX(100px);opacity:0; transition:0.5s}
+
+
+#portfolio .tab>li.on>.pannel >.pic{transform: translateX(0px); opacity:1;}
+
+#portfolio .tab> li> .pannel> .info { padding: 80px }
+#portfolio .tab>li.on> .pannel>.info>.sub_title{transform: translateX(0px);opacity:1;}
+#portfolio .tab>li.on> .pannel>.info>.sub_txt1{transform: translateX(0px);opacity:1;transition-delay: 0.1s;}
+#portfolio .tab>li.on> .pannel>.info>.sub_txt2{transform: translateX(0px);opacity:1;transition-delay: 0.2s;}
+#portfolio .tab>li.on> .pannel>.info>.sub_txt3{transform: translateX(0px);opacity:1;transition-delay: 0.2s;}
+#portfolio .tab>li.on> .pannel>.info>.view_more{transform: translateX(0px);opacity:1;transition-delay: 0.4s;}
+
+@media screen and (max-width:980px){
+    #portfolio .tab>li> .pannel> .info {width: 100%; padding-top:30px; padding-bottom:30px}
+    #portfolio .tab>li> .pannel> .info>.sub_title{font-size: 28px}
+    #portfolio .tab>li> .pannel> .info>.sub_txt1{font-size: 20px}
+    #portfolio .tab>li> .pannel> .info>.sub_txt2{font-size:18px}
+    #portfolio .tab>li> .pannel> .info>.sub_txt3{margin: 0 0 20px;}
+}
+
+@media screen and (max-width:768px){
+    #portfolio{height:1200px}
+    
+    #portfolio .tab>li> .pannel> .pic img{width: 150%;}
+    #portfolio .tab>li>.pannel >.info{margin-top:100px; width:100%}
+}
+@media screen and (max-width:640px){
+    
+    #portfolio .tab>li>a{padding: 0 10px; font-size: 14px;}
+    #portfolio .tab{height: 600px;}
+    #portfolio .tab>li> .pannel>.pic{position: static; height: auto;} /* 높이 자기 크기만큼만 잡히게*/
+    #portfolio .tab>li> .pannel>.pic img{width: 100%; position: static; transform: translate(0)}
+    #portfolio .tab>li> .pannel>div{width: 100%;}
+    #portfolio .tab>li> .pannel>.info{margin: 40px 0 0; text-align: center;}
+    #portfolio .tab>li> .pannel>.info>.sub_title{font-size: 24px}
+    #portfolio .tab>li> .pannel>.info>.sub_txt1{font-size: 18px}
+    #portfolio .tab>li> .pannel>.info>.sub_txt2{font-size: 14px}
+    #portfolio .tab>li> .pannel>.info>.sub_txt2{margin: 0 0 20px;} 
+}
+
+
+
+/*contact*/
+#contact{width:100%; height: 900px; background: lightblue}
+#contact .box{float:left}
+#contact .title{font: 50px 'Indie Flower'}
+#contact .txt{margin: 20px 0 80px; font:bold 45px '맑은 고딕'}
+#contact li{}
+#contact li a{font:30px/50px '맑은 고딕'; color:#444}
+
+#contact .email_box{float:right; width:500px; height:500px; padding:30px 50px; background: rgb(89, 97, 168);}
+#contact .email_box .info{margin-bottom:20px}
+#contact .email_box #name{display:block; width:80%; line-height:50px;  margin-bottom: 20px;}
+#contact .email_box #mail{display:block;  width:80%; line-height:50px; ; margin-bottom: 20px;}
+#contact .email_box #message{display:block; width:80%}
+#contact .email_box .submit1{display:block; width:120px; height:40px;  margin:20px auto; font:20px/40px 'inherit'; color:#444; background-color:  #fff; text-align: center; outline: 0; border:0;}
+
+@media screen and (max-width:1200px){
+    #contact{height: 1100px;}
+    #contact .box{width:100%}
+    #contact .email_box{width:100%; margin:0 auto}
+
+}
+
+/*copyright*/
+.copyright{text-align: center; background:#777; color:#fff}
