@@ -542,3 +542,80 @@ main.on {
     }
 
 }
+
+/* Contact */
+#contack{
+    width: 100%;
+    height: 900px;
+    background: lightblue;
+}
+#contact .box{
+    float: left;
+}
+#contact .title{
+    font: 50px 'Indie Flower';
+}
+#contact .txt{
+    margin: 20px 0 80px;
+    font: bold 45px '맑은 고딕';
+}
+#contact li a{
+    font:30px/50px '맑은 고딕';
+    color:#444;
+}
+
+#contact .email_box{
+    float: right;
+    width: 500px;
+    height: 500px;
+    padding: 30px 50px;
+    background: rgb(89,97,168);
+}
+#contact .email_box .info{
+    margin-bottom: 20px;
+}
+
+#contact .email_box #mail{
+    display: block;
+    width: 80%;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+#contact .email_box #message{
+    display: block;
+    width: 80%;
+}
+#contact .email_box .submit1{
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin: 20px auto;
+    font: 20px/40px 'inherit';
+    color: #444;
+    background-color: #fff;
+    text-align: center;
+    outline:0;
+    border: 0;
+}
+
+@media screen and (max-width:1200px){
+    #contact{
+        height: 1100px;
+    }
+    #contact .box{
+        width: 100%;
+    }
+    #contact .email_box{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Copyright */
+
+.copyright{
+    text-align: center;
+    background-color: #777;
+    color:#fff;
+    
+}
