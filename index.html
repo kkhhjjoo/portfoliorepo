@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>김현주의 portfolio</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.5.6/dist/progressbar.js"></script>
 
     <style>
@@ -117,7 +118,7 @@
                     <ul class="sub">
                       <li>
                         <a href="#">웹디자인 기능사 필기</a>
-                        <a href="#">2020.09.11 GTQ- R그래픽 기술 자격증</a>
+                        <a href="#">2020.09.11 GTQ-그래픽 기술 자격 2급</a>
                       </li>
                     </ul>
                   </li>
@@ -177,88 +178,327 @@
       <section id="portfolio" class="content">
         <div class="inner">
           <h2 class="title">Portfolio</h2>
-          <ul class="tab">
-            <li>
-              <a href="#">이케아</a>
-              <div class="pannel">
-                <div class="pic">
-                  <img src="img/portfolio1-ikea.jpg" alt="이케아 홈페이지" />
-                  <div class="info">
-                    <h3 class="sub_title">이케아</h3>
-                    <p class="sub_txt1">작업기간:1주일</p>
-                    <p class="sub_txt2">
-                      이케아 리뉴얼페이지이며, 포토폴리오 용으로 제작되었음을
-                      밝힙니다.
-                    </p>
-                    <p class="sub_txt3">pc, 모바일 반응형 / float 사용</p>
-                    <a href="ikea/index.html" class="view_more">보러가기</a>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bg1">
+                <div class="box">
+                  <h3 class="numbering">#01</h3>
+                  <span class="category">Responsive Website</span>
+                  <h3 class="site_title">이케아</h3>
+                  <div class="info_area">
+                    <div class="date">
+                      <h2>제작기간</h2>
+                      <p>7일</p>
+                    </div>
+                    <div class="info">
+                      <h2>기여도</h2>
+                      <div class="item">
+                        <div class="dots">
+                          <p>Planing</p>
+                          <span>100%</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="dots">
+                          <p>float/flex</p>
+                          <span>float</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="dots">
+                          <p>Publishing</p>
+                          <span>90%</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                  <h3 class="view">
+                    <a href="ikea/index.html"_blank">VIEW SITE</a>
+                  </h3>
+                </div>
+                <div class="pic"><img src="img/new/ikea.jpg" alt="" /></div>
+              </div>
+              <div class="swiper-slide bg2">
+                <div class="box">
+                  <h3 class="numbering">#02</h3>
+                  <span class="category">Responsive Website</span>
+                  <h3 class="site_title">에어비앤비</h3>
+                  <div class="info_area">
+                    <div class="date">
+                      <h2>제작기간</h2>
+                      <p>7일</p>
+                    </div>
+                    <div class="info">
+                      <h2>기여도</h2>
+                      <div class="item">
+                        <div class="dots">
+                          <p>Planing</p>
+                          <span>100%</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="dots">
+                          <p>float/flex</p>
+                          <span>float:70%, flex:30%</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="dots">
+                          <p>Publishing</p>
+                          <span>90%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="view">
+                    <a href="airbnb/index.html"_blank">VIEW SITE</a>
+                  </h3>
+                </div>
+                <div class="pic"><img src="img/new/airbnb.jpg" alt="" /></div>
+              </div>
+              <div class="swiper-slide bg3">
+                <div class="box">
+                  <h3 class="numbering">#03</h3>
+                  <span class="category">Responsive Website</span>
+                  <h3 class="site_title">룬느</h3>
+                  <div class="info_area">
+                    <div class="date">
+                      <h2>제작기간</h2>
+                      <p>10일</p>
+                    </div>
+                    <div class="info">
+                      <h2>기여도</h2>
+                      <div class="item">
+                        <div class="dots">
+                          <p>Planing</p>
+                          <span>100%</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="dots">
+                          <p>float/flex</p>
+                          <span>float</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="dots">
+                          <p>Publishing</p>
+                          <span>90%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="view">
+                    <a href="lunne/index.html" target="_blank">VIEW SITE</a>
+                  </h3>
+                </div>
+                <div class="pic"><img src="img/new/lunne.jpg" alt="" /></div>
+              </div>
+
+              <div class="swiper-slide bg5">
+                <div class="box">
+                  <h3 class="numbering">#05</h3>
+                  <span class="category">Responsive Website</span>
+                  <h3 class="site_title">파지티브 호텔</h3>
+                  <div class="info_area">
+                    <div class="date">
+                      <h2>제작기간</h2>
+                      <p>7일</p>
+                    </div>
+                    <div class="info">
+                      <h2>기여도</h2>
+                      <div class="item">
+                        <div class="dots">
+                          <p>Planing</p>
+                          <span>100%</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="dots">
+                          <p>float/flex</p>
+                          <span>float</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="dots">
+                          <p>Publishing</p>
+                          <span>90%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="view">
+                    <a href="positive_hotel/index.html">VIEW SITE</a>                    >
+                  </h3>
+                </div>
+                <div class="pic">
+                  <img src="img/new/positivehotel.jpg" alt="" />
                 </div>
               </div>
+              <div class="swiper-slide bg6">
+                <div class="box">
+                  <h3 class="numbering">#06</h3>
+                  <span class="category">Responsive Website</span>
+                  <h3 class="site_title">W 컨셉</h3>
+                  <div class="info_area">
+                    <div class="date">
+                      <h2>제작기간</h2>
+                      <p>7일</p>
+                    </div>
+                    <div class="info">
+                      <h2>기여도</h2>
+                      <div class="item">
+                        <div class="dots">
+                          <p>Planing</p>
+                          <span>100%</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="dots">
+                          <p>float/flex</p>
+                          <span>float:70%, flex:30%</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="dots">
+                          <p>Publishing</p>
+                          <span>90%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="view">
+                    <a href="../wconcept/index.html" target="_blank"
+                      >VIEW SITE</a
+                    >
+                  </h3>
+                </div>
+                <div class="pic"><img src="img/new/wconcept.jpg" alt="" /></div>
+              </div>
+              <div class="swiper-slide bg5">
+                <div class="box">
+                  <h3 class="numbering">#07</h3>
+                  <span class="category">Responsive Website</span>
+                  <h3 class="site_title">설화수</h3>
+                  <div class="info_area">
+                    <div class="date">
+                      <h2>제작기간</h2>
+                      <p>7일</p>
+                    </div>
+                    <div class="info">
+                      <h2>기여도</h2>
+                      <div class="item">
+                        <div class="dots">
+                          <p>Planing</p>
+                          <span>100%</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="dots">
+                          <p>float/flex</p>
+                          <span>flex</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="dots">
+                          <p>Publishing</p>
+                          <span>100%</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="dots">
+                          <p>Board</p>
+                          <span>60%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="view">
+                    <a href="../sulwhasoo/index.html" target="_blank"
+                      >VIEW SITE</a
+                    >
+                  </h3>
+                </div>
+                <div class="pic">
+                  <img src="img/new/sulwhasoo.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <section id="design" class="content">
+        <div class="inner">
+          <h2 class="title">Design</h2>
+          <ul class="list">
+            <li>
+              <input id="item-01" type="checkbox" />
+              <label for="item-01" class="thumnail"
+                ><img src="img/jpg/01.color%20channel.jpg" alt=""
+              /></label>
             </li>
             <li>
-              <a href="#">에이비앤비</a>
-              <div class="pannel">
-                <div class="pic"><img src="img/airbnb.jpg" alt="" /></div>
-                <div class="info">
-                  <h3 class="sub_title">에어비앤비</h3>
-                  <p class="sub_txt1">작업기간:1주일</p>
-                  <p class="sub_txt2">
-                    에어비앤비 리뉴얼페이지이며, 포토폴리오 용으로 제작되었음을
-                    밝힙니다.
-                  </p>
-                  <p class="sub_txt3">pc, 모바일 반응형 / float 사용</p>
-                  <a href="airbnb/index.html" class="view_more">보러가기</a>
-                </div>
-              </div>
+              <input id="item-02" type="checkbox" />
+              <label for="item-02" class="thumnail"
+                ><img src="img/jpg/02.geometric.jpg" alt=""
+              /></label>
             </li>
             <li>
-              <a href="#">룬느</a>
-              <div class="pannel">
-                <div class="pic"><img src="img/lunne.jpg" alt="" /></div>
-                <div class="info">
-                  <h3 class="sub_title">룬느</h3>
-                  <p class="sub_txt1">작업기간:10일</p>
-                  <p class="sub_txt2">
-                    룬느 리뉴얼페이지이며, 포토폴리오 용으로 제작되었음을
-                    밝힙니다.
-                  </p>
-                  <p class="sub_txt3">pc, 모바일 반응형 / float 사용</p>
-                  <a href="lunne/index.html" class="view_more">보러가기</a>
-                </div>
-              </div>
+              <input id="item-03" type="checkbox" />
+              <label for="item-03" class="thumnail"
+                ><img src="img/jpg/03.vintage.jpg" alt=""
+              /></label>
             </li>
             <li>
-              <a href="#">배스킨라빈스</a>
-              <div class="pannel">
-                <div class="pic"><img src="img/baskin.jpg" alt="" /></div>
-                <div class="info">
-                  <h3 class="sub_title">배스킨라빈스</h3>
-                  <p class="sub_txt1">작업기간:10일</p>
-                  <p class="sub_txt2">
-                    배스킨라빈스 리뉴얼페이지이며, 포토폴리오 용으로
-                    제작되었음을 밝힙니다.
-                  </p>
-                  <p class="sub_txt3">pc, 모바일 반응형 / float 사용</p>
-                  <a href="baskin31/index.html" class="view_more">보러가기</a>
-                </div>
-              </div>
+              <input id="item-04" type="checkbox" />
+              <label for="item-04" class="thumnail"
+                ><img src="img/jpg/03-2.vintage.jpg" alt=""
+              /></label>
             </li>
             <li>
-              <a href="#">제니하우스</a>
-              <div class="pannel">
-                <div class="pic"><img src="img/jennyhouse.jpg" alt="" /></div>
-                <div class="info">
-                  <h3 class="sub_title">제니하우스</h3>
-                  <p class="sub_txt1">작업기간:10일</p>
-                  <p class="sub_txt2">
-                    제니하우스 리뉴얼페이지이며, 포토폴리오 용으로 제작되었음을
-                    밝힙니다.
-                  </p>
-                  <p class="sub_txt3">pc, 모바일 반응형 / float 사용</p>
-                  <a href="jennyhouse/index.html" class="view_more">보러가기</a>
-                </div>
-              </div>
+              <input id="item-05" type="checkbox" />
+              <label for="item-05" class="thumnail"
+                ><img src="img/jpg/04.double light.jpg" alt=""
+              /></label>
+            </li>
+            <li>
+              <input id="item-06" type="checkbox" />
+              <label for="item-06" class="thumnail"
+                ><img src="img/jpg/05.luined%20effect.jpg" alt=""
+              /></label>
+            </li>
+            <li>
+              <input id="item-07" type="checkbox" />
+              <label for="item-07" class="thumnail"
+                ><img src="img/jpg/05-2.luined%20effect.jpg" alt=""
+              /></label>
+            </li>
+            <li>
+              <input id="item-08" type="checkbox" />
+              <label for="item-08" class="thumnail"
+                ><img src="img/jpg/06.newtro.jpg" alt=""
+              /></label>
+            </li>
+            <li>
+              <input id="item-09" type="checkbox" />
+              <label for="item-09" class="thumnail"
+                ><img src="img/jpg/06-2.newtro.jpg" alt=""
+              /></label>
+            </li>
+            <li>
+              <input id="item-10" type="checkbox" />
+              <label for="item-10" class="thumnail"
+                ><img src="img/jpg/07.lineart.jpg" alt=""
+              /></label>
+            </li>
+            <li>
+              <input id="item-09" type="checkbox" />
+              <label for="item-09" class="thumnail"
+                ><img src="img/jpg/08.papercut.jpg" alt=""
+              /></label>
             </li>
           </ul>
         </div>
