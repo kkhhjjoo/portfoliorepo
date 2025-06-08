@@ -142,3 +142,80 @@ a {
 #header .toggle {
   display: none;
 }
+
+@media screen and (max-width: 980px) {
+  #header .nav_wrap {
+    position: fixed;
+    right: -300px;
+    top: 100px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+    transition: 0.3s;
+  }
+}
+#header .nav_wrap.on {
+  right: 0;
+}
+#header .nav_wrap a {
+  color: #fff;
+}
+
+#header .gnb_wrap {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#gnb > li {
+  width: 100%;
+  text-align: center;
+}
+#gnb > li > a {
+  padding: 0;
+  line-height: 60px;
+  color: #fff;
+}
+#gnb > li > .sub_wrap {
+  display: none;
+  position: static;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  color: #444;
+}
+#gnb > li > .sub_wrap.on {
+  height: auto;
+  transition: 0.5s;
+}
+
+#gnb .depth_1 {
+  padding: 0;
+}
+#gnb .depth_1 > li {
+  width: 100%;
+  padding: 10px 0;
+  border: 0;
+}
+#gnb .depth_1 > li.pic {
+  display: none;
+}
+
+#gnb .depth_2 {
+  display: none;
+}
+
+#header .icon {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#header .toggle {
+  display: block;
+  position: absolute;
+  right: 40px;
+  top: 25px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10;
+}
