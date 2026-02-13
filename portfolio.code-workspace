@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../포트폴리오/자기소개-김현주-세로형/img/new"
+    },
+    {
+      "path": "../포트폴리오/자기소개-김현주-세로형/img/jpg"
+    },
+    {
+      "path": "../../../AppData/Local/Temp/fz3-17493049345890"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "portfolio",
+    "liveServer.settings.port": 5501
+  }
+}

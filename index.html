@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>김현주의 portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.5.6/dist/progressbar.js"></script>
+
+    <style>
+      .progress {
+        height: 300px;
+      }
+      .progress > svg {
+        height: 100%;
+        display: block;
+      }
+      .progress2 {
+        height: 300px;
+      }
+      .progress2 > svg {
+        height: 100%;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page_btn"></div>
+    <button class="toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <header id="header">
+      <h1 class="logo">
+        <a href="#"> HYUNJOO </a>
+      </h1>
+      <nav class="gnb_wrap">
+        <ul id="gnb">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#skill">Skill</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="content">
+        <div class="inner">
+          <video muted autoply loop>
+            <source src="img/bestseller-bg.mp4" type="video/mp4" />
+          </video>
+          <div class="msg">
+            <p class="txt">Welcome to Hyunjoo&#180;s portfolio</p>
+            <p class="introduce">
+              안녕하세요. 열정을 가진<br />
+              프론트엔드 김현주입니다.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="content">
+        <div class="inner">
+          <h2 class="title">About</h2>
+          <div class="pic">
+            <img src="img/profile.jpg" alt="프로필 사진" />
+          </div>
+          <div class="msg">
+            <ul class="introduce">
+              <li>
+                <a href="#">Profile</a>
+                <ul class="sub">
+                  <li>
+                    <a href="#">Name : 김현주</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Address: 경기도 화성시 남양읍 시청로 102번길 12 양우 내안애 2차
+                      아파트 205동 1201호</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#">Birth : 1992.12.03</a>
+                  </li>
+                  <li>
+                    <a href="#">E-mail : khjoo1203@naver.com</a>
+                  </li>
+                  <li>
+                    <a href="#">License</a>
+                    <ul class="sub">
+                      <li>
+                        <a href="#">웹디자인 기능사 필기</a>
+                        <a href="#">2020.09.11 GTQ-그래픽 기술 자격 2급</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="skill" class="content">
+        <div class="inner">
+          <h2 class="title">Skill</h2>
+          <div class="box">
+            <div class="progress" id="one">
+              <p class="msg">
+                HTML5
+                <span>80%</span>
+              </p>
+            </div>
+            <p class="info">웹 표준을 준수하고 효율적인 코드를 설계합니다.</p>
+          </div>
+          <div class="box">
+            <div class="progress" id="two">
+              <p class="msg">CSS3<span>80%</span></p>
+            </div>
+            <p class="info">
+              미디어쿼리를 활용하여 반응형 레이아웃을 이해 및 구현합니다.
+            </p>
+          </div>
+          <div class="box">
+            <div class="progress" id="three">
+              <p class="msg">Jquery<span>80%</span></p>
+            </div>
+            <p class="info">
+              제이쿼리 라이브러리를 활용하여 기능을 구현하고 유용한 플러그인을
+              적용합니다.
+            </p>
+          </div>
+          <div class="box">
+            <div class="progress" id="four">
+              <p class="msg">Photoshop<span>70%</span></p>
+            </div>
+            <p class="info">다양한 툴과 편집기능을 자유자재로 사용합니다.</p>
+          </div>
+          <div class="box">
+            <div class="progress" id="five">
+              <p class="msg">Illustrator<span>70%</span></p>
+            </div>
+            <p class="info">
+              아이콘 제작등 벡터 소스의 자유로운 제작과 편집이 가능합니다.
+            </p>
+          </div>
+          <p class="txt">#꼼꼼함 #크로스브라우징 #반응형 #하드코딩 #성실함</p>
+        </div>
+      </section>
+
+      <section id="portfolio" class="content">
+        <div class="inner">
+          <h2 class="title">Portfolio</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bg1">
+                <div class="box">
+                  <h3 class="numbering">#01</h3>
+                  <span class="category">Responsive Website</span>
+                  <h3 class="site_title">이케아</h3>
+                  <div class="info_area">
+                    <div class="date">
+                      <h2>제작기간</h2>
+                      <p>7일</p>
+                    </div>
+                    <div class="info">
+                      <h2>기여도</h2>
+                      <div class="item">
+                        <div class="dots">
+                          <p>Planing</p>
+                          <span>100%</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="dots">
+                          <p>float/flex</p>
+                          <span>float</span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="dots">
+                          <p>Publishing</p>
+                          <span>90%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="view">
+                    <a href="ikea/index.html"_blank">VIEW SITE</a>
+                  </h3>
+                </div>
+                <div class="pic"><img src="img/new/ikea.jpg" alt="" /></div>
+              </div>
+              
+      </section>
+      <section id="design" class="content">
+            <div class="inner">
+                <h2 class="title">Design</h2>
+                <ul class="list">
+                    <li>
+                        <input id="item-01" type="checkbox">
+                        <label for="item-01" class="thumnail"><img src="img/jpg/01.color%20channel.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input id="item-02" type="checkbox">
+                        <label for="item-02" class="thumnail"><img src="img/jpg/02.geometric.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input id="item-03" type="checkbox">
+                        <label for="item-03" class="thumnail"><img src="img/jpg/03.vintage.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input id="item-04" type="checkbox">
+                        <label for="item-04" class="thumnail"><img src="img/jpg/03-2.vintage.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input id="item-05" type="checkbox">
+                        <label for="item-05" class="thumnail"><img src="img/jpg/04.double light.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input id="item-06" type="checkbox">
+                        <label for="item-06" class="thumnail"><img src="img/jpg/05.luined%20effect.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input id="item-07" type="checkbox">
+                        <label for="item-07" class="thumnail"><img src="img/jpg/05-2.luined%20effect.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input id="item-08" type="checkbox">
+                        <label for="item-08" class="thumnail"><img src="img/jpg/06.newtro.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input id="item-09" type="checkbox">
+                        <label for="item-09" class="thumnail"><img src="img/jpg/06-2.newtro.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input id="item-10" type="checkbox">
+                        <label for="item-10" class="thumnail"><img src="img/jpg/07.lineart.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <input id="item-09" type="checkbox">
+                        <label for="item-09" class="thumnail"><img src="img/jpg/08.papercut.jpg" alt=""></label>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+      <section id="contact" class="content">
+        <div class="inner">
+          <h2 class="title">Contact</h2>
+          <div class="box">
+            <p class="txt">Thank you for watching!</p>
+            <li>
+              <a href="#">Name : Kim Hyunju</a>
+            </li>
+            <li>
+              <a href="tel:010-4758-7351">Phone : 010-4758-7351</a>
+            </li>
+            <li>
+              <a href="mailto:khjoo1203@naver.com">E-mail : khjoo1203@naver.com</a>
+            </li>
+          </div>
+          <div class="email_box">
+            <div class="info">
+              <p>
+                채용 관련해서 문의하고 싶으시면<br />
+                <a href="tel:010-4758-7351">010-4758-7351</a>으로 연락 주시거나<br />
+                아래를 통해 연락주세요.
+              </p>
+            </div>
+            <form action="khjoo1203@naver.com" method="POST">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="&nbsp;NAME"
+              />
+              <input
+                type="email"
+                id="mail"
+                name="email"
+                placeholder="&nbsp;E-MAIL"
+              />
+              <textarea
+                name="message1"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="&nbsp;MESSAGE"
+              ></textarea>
+              <button type="submit" value="button" class="submit">
+                제출하기
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="copyright">© 2025 Hyunjoo&#180;s copyright</div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
